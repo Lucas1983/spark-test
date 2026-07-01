@@ -1,11 +1,11 @@
-docker exec -it 6691bc085033 spark-submit /opt/bitnami/spark/jobs/process.py
+Command to run spark script: spark-submit /opt/bitnami/spark/jobs/process.py
 
-The original csv file is split into two, because github doesn't allow file > 100Mb. 
+The original CSV file is split into two because GitHub doesn't allow files> 100 MB. 
 
-Make sure to merge both csv file into one before processing. 
+Make sure to merge both CSV files into a single file before processing. 
 
-Original file size referred in code is: demographic_divident.csv
+The original file size referred to in the code is: demographic_dividend.csv
 
-Try merging these files using below command.
+Try merging these files using the command.
 
 cat first-half.csv second-half.csv > demographic_divident.csv
